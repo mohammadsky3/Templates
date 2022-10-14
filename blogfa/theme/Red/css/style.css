@@ -20,9 +20,9 @@ img {max-width:100%;height:auto;border:0px;}
 
 @font-face {
 font-family: 'Byekan';
-src: url('font/BYekan.eot?#') format('eot'),  /* IE6-8 */
-url('font/BYekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-url('font/BYekan.ttf') format('truetype');  /* Saf3-5, Chrome4+, FF3.5, Opera 10+ */
+src: url('font/Far.Khodkar.eot?#') format('eot'),  /* IE6-8 */
+url('font/Far.Khodkar.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+url('font/Far.Khodkar.ttf') format('truetype');  /* Saf3-5, Chrome4+, FF3.5, Opera 10+ */
 font-style:normal;
 font-weight:700;
 }
