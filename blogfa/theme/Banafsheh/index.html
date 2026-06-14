@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="shortcut icon" href="https://up.ideapen.ir/up/galebgraph/posts/theme/web/Banafsheh/images/fav.png"/>
+<meta name="robots" content="index,follow,all"/>
+<link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->"/>
+<meta name="keywords" content="<-BlogId->,<-BlogAndPostTitle->,<-BlogTitle->"/>
+<meta name="description" content="<-BlogDescription->"/>
+<title><-BlogAndPostTitle-></title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mohammadsky3/Templates@refs/heads/main/blogfa/theme/Banafsheh/css/style.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mohammadsky3/Templates@refs/heads/main/blogfa/theme/Banafsheh/css/ionicons.css" />
+<script src="https://cdn.jsdelivr.net/gh/mohammadsky3/Templates@refs/heads/main/blogfa/theme/Banafsheh/jquery.min.js"></script>
+<script  language="javascript">
+  function GetBC(lngPostid)
+   {
+       intTimeZone=<-BlogTimeZone->;
+       strBlogId="<-BlogId->";
+       intCount=-1;
+       strResult="";
+       try {
+	  for (i=0;i<BlogComments.length;i+=2)
+	  {
+	       if (BlogComments[i]==lngPostid)
+	       intCount=BlogComments[i+1] ;
+	  }
+           }  catch( e) {
+           }
+    if ( intCount==-1)  strResult="آرشیو نظرات";
+    if ( intCount==0)  strResult="نظر بدهید";
+    if ( intCount==1)  strResult="یک نظر";
+    if ( intCount>1)  strResult=intCount + " نظر" ;
+  
+  strUrl="/comments/?blogid=" +strBlogId + "&postid=" + lngPostid + "&timezone=" + intTimeZone ;
+  strResult ="<a href=\"javascript:void(0)\" onclick=\"javascript:window.open('" + strUrl + "','blogfa_comments','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px')\" >" +  strResult + " </a>" ;
+
+  document.write ( strResult ) ;
+ }
+ 
+function OpenLD()
+{
+  window.open('/links','blogfa_ld','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px');
+  return true;
+}
+</script>
+
+
+
+
+
+<!--Commen Start-->
+
+<script  language="javascript">
+  function GetBC2(lngPostid, strPostlink)
+   {
+       intTimeZone=0;
+       strBlogId="<-BlogId->";
+       intCount=-1;
+       strResult="";
+       try {
+	  for (i=0;i<BlogComments.length;i+=2)
+	  {
+	       if (BlogComments[i]==lngPostid)
+	       intCount=BlogComments[i+1] ;
+	  }
+           }  catch( e) {
+           }
+    if ( intCount==-1)  strResult="آرشیو نظرات";
+    if ( intCount==0)  strResult="نظر بدهید";
+    if ( intCount==1)  strResult="یک نظر";
+    if ( intCount>1)  strResult=intCount + " نظر" ;
+
+  strUrl="/comments/?blogid=" +strBlogId + "&postid=" + lngPostid + "&timezone=" + intTimeZone ;
+  strResult = "<a href=\"" + strPostlink + "#comments\">" + strResult + "</a>" ;
+
+  document.write ( strResult ) ;
+ }
+  var timezone = 0;
+  var blogid = "<-BlogId->";
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mohammadsky3/Templates@refs/heads/main/blogfa/blogfa-comnazaratdaredagfa.js"></script>
+
+ 
+<!--Commen End-->
+ 
+
+
+
+</head>
+<body>
+<div class="main-top">
+<div class="container">
+<div class="mt-time"><i class="ion-speakerphone"></i><span> به سایت ما خوش آمدید . امیدوارم لحظات خوشی را درسایت ما سپری نمایید .</span></div>
+<div class="mt-social">
+<a target="_blank" href="#" title="dribbble"><i class="ion-social-dribbble"></i></a>
+<a target="_blank" href="#" title="facebook"><i class="ion-social-facebook-outline"></i></a>
+<a target="_blank" href="#" title="googleplus"><i class="ion-social-googleplus-outline"></i></a>
+<a target="_blank" href="#" title="yahoo"><i class="ion-social-hackernews-outline"></i></a>
+<a target="_blank" href="#" title="instagram"><i class="ion-social-instagram"></i></a>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<header>
+<div class="container">
+<div class="header-text">
+<h1><-BlogTitle-></h1>
+<h2><-BlogAndPostTitle->.</h2>
+</div>
+<a target="_blank" href="#"class="ads"><img src="http://up.ideapen.ir/up/galebgraph/posts/theme/web/Banafsheh/images/your-ads.png" title="مکان تبلیغات شما" alt="مکان تبلیغات شما"/></a>
+<div class="clear"></div>
+</div>
+</header>
+<nav class="nav">
+<div class="container">
+<ul>
+<a href="<-BlogUrl->" title="Home"><li><i class="ion-android-home"></i><h3>صفحه اصلی</h3></li></a>
+<a href="<-BlogArchiveLink->" title="Archive"><li><i class="ion-archive"></i><h3>آرشیو مطالب</h3></li></a>
+<a href="#" title="Ads"><li><i class="ion-easel"></i><h3>سفارش آگهی</h3></li></a>
+<a href="<-BlogXmlLink->" title="Rss"><li><i class="ion-social-rss"></i><h3>خوراک سایت</h3></li></a>
+<a href="#" title="telegram"><li><i class="ion-paper-airplane"></i><h3>تلگرام سایت</h3></li></a>
+<a href="mailto:<-BlogEmail->" title="Contact"><li><i class="ion-chatboxes"></i><h3>تماس باما</h3></li></a>
+<a rel="nofollow" target="_blank" href="http://ideapen.ir/" title="GhalebGraph"><li><i class="ion-paintbrush"></i><h3>طراح قالب</h3></li></a>
+<! استفاده از قالب در صورت حذف لینک طراح قالب یعنی قالب گراف حرام می باشد و ما رضایتی نداریم ->
+</ul>
+<div class="clear"></div>
+</div>
+</nav>
+<div class="container">
+<div class="clear"></div>
+<div class="right">
+
+<BlogCategoriesBlock>
+<div class="sub-body">
+<div class="sub-title"><i class="ion-android-list"></i><h4>موضوعات وب</h4></div>
+<div class="text">
+<ul><BlogCategories><li><h3><a href="<-CategoryLink->"><-CategoryName-></a></h3></li></BlogCategories></ul>
+</div>
+</div>
+</BlogCategoriesBlock>
+
+
+<BlogLinksBlock>
+<div class="sub-body">
+<div class="sub-title"><i class="ion-cash"></i><h4>لینک دوستان</h4></div>
+<div class="text">
+<ul><BlogLinks><li><a rel="nofollow" target="_blank" href="<-LinkUrl->"><-LinkTitle-></a></li></BlogLinks></ul>
+</div>
+</div>
+</BlogLinksBlock>
+
+
+<div class="sub-body">
+<div class="sub-title"><i class="ion-ios-game-controller-b"></i><h4>امکانات وب</h4></div>
+<div class="text">
+<-BlogCustomHtml->
+</div>
+</div>
+
+
+</div>
+
+<div class="center">
+
+<BLOGFA>
+<div class="sub-body">
+<div class="sub-title"><i class="ion-ios-basketball-outline"></i><h4><a href="<-PostLink->"><-PostTitle-></a></h4></div>
+<div class="text">
+<BlogPostCategoriesBlock><div class="cat">دسته بندی : <BlogPostCategories separator="، " ><a href="<-CategoryLink->"><-CategoryName-></a></BlogPostCategories></div></BlogPostCategoriesBlock>
+<-PostContent->
+<div class="clear"></div>
+<ul class="links">
+<a href="<-BlogUrl->/page/<-PostId->" title="پیش نمایش"><li><span>پیش نمایش</span></li></a>
+</ul>
+<BlogExtendedPost><a class="more" href="<-PostLink->">ادامه مطلب</a></BlogExtendedPost>
+<div class="clear"></div>
+<div class="p-details">
+<div class="d2 ion-edit">  <a rel="author" href="<-PostAuthorLink->"><-PostAuthor-></a> </div>
+<div class="d2 ion-clock">  <-PostDate-> - <-PostTime->  </div>
+<BlogComment><div class="d2 ion-chatbox"> <script type="text/javascript">GetBC(<-PostId->);</script> </div></BlogComment>
+<div class="clear"></div>
+</div>
+<BlogPostTagsBlock><div class="tags"> برچسب‌ها: <BlogPostTags separator=", "><a rel="tag" href="<-TagLink->"><-TagName-></a></BlogPostTags></div></BlogPostTagsBlock>
+</div>
+</div>
+
+
+
+<!-- Start-->
+<div class="comments" id="comments" style="display: none;">
+
+<div class="sub-body">
+<div class="sub-title"><i class="ion-ios-chatbubble"></i><h4>دیدگاه شما</h4></div>
+<div class="text">
+<div class="pagination">
+
+<script type="text/javascript">insideComment(<-PostId->);</script>
+</div>
+</div>
+</div>
+
+</div>
+<!-- End-->
+ 
+
+
+</BLOGFA>
+
+
+<BlogNextAndPreviousBlock>
+<div class="sub-body">
+<div class="sub-title"><i class="ion-ios-pricetag"></i><h4>صفحات وب</h4></div>
+<div class="text">
+<div class="pagination">
+<BlogPreviousPageBlock><a href="<-BlogPreviousPageLink->">صفحه قبلی</a></BlogPreviousPageBlock>
+<BlogNextPageBlock><a href="<-BlogNextPageLink->">صفحه بعدی</a></BlogNextPageBlock>
+</div>
+</div>
+</div>
+</BlogNextAndPreviousBlock>
+
+
+
+
+
+</div>
+<div class="left">
+
+
+<BlogAuthorsBlock>
+<div class="sub-body">
+<div class="sub-title"><i class="ion-ios-camera"></i><h4>نويسندگان</h4></div>
+<div class="text">
+<ul><BlogAuthors><li><a rel="author" href="<-AuthorLink->"><-AuthorName-></a></li></BlogAuthors></ul>
+</div>
+</div>
+</BlogAuthorsBlock>
+
+<BlogTagsBlock>
+<div class="sub-body">
+<div class="sub-title"><i class="ion-bookmark"></i><h4>برچسب‌ها</h4></div>
+<div class="text">
+<ul><BlogTags><li><h4><a rel="tag" title="دارای <-TagCount-> پست با این تگ" href="<-TagLink->"><-TagName-></a></h4></li></BlogTags></ul>
+</div>
+</div>
+</BlogTagsBlock>
+
+<BlogLinkDumpBlock>
+<div class="sub-body">
+<div class="sub-title"><i class="ion-leaf"></i><h4>پيوندهای روزانه</h4></div>
+<div class="text">
+<ul><BlogLinkDump><li><a rel="nofollow" target="_blank" title="<-LinkDescription->" href="<-LinkUrl->"><-LinkTitle-></a></li></BlogLinkDump>
+<li><a href="javascript:void(0)" onclick ="OpenLD();">آرشیو لینکها</a></li></ul>
+</div>
+</div>
+</BlogLinkDumpBlock>
+
+
+</div>
+
+<div class="clear"></div>
+</div>
+<footer>
+<div class="container">
+
+<BlogProfile><div class="footer-box">
+<div class="sub-title-s"><i class="ion-clipboard"></i><span> درباره ما </span></div>
+<div class="clear"></div>
+<BlogPhoto><center><img alt="<-BlogTitle->" title="<-BlogTitle->" src="<-BlogPhotoLink->"></center><br/></BlogPhoto>
+<-BlogAbout->
+<BlogProfileLinkBlock><br/>- <a href="<-BlogProfileLink->">مشاهده پروفایل مدیر وبلاگ</a> </BlogProfileLinkBlock>
+</div></BlogProfile>
+
+<div class="footer-box">
+<div class="sub-title-s"><i class="ion-icecream"></i><span>تبلیغات متنی</span></div>
+<div class="clear"></div>
+<ul class="links">
+<a href="#" title="تبلیغات متنی"><li><span>تبلیغات متنی</span></li></a>
+<a href="#" title="تبلیغات متنی"><li><span>تبلیغات متنی</span></li></a>
+<a href="#" title="تبلیغات متنی"><li><span>تبلیغات متنی</span></li></a>
+<a href="#" title="تبلیغات متنی"><li><span>تبلیغات متنی</span></li></a>
+<a href="#" title="تبلیغات متنی"><li><span>تبلیغات متنی</span></li></a>
+<a href="#" title="تبلیغات متنی"><li><span>تبلیغات متنی</span></li></a>
+<a href="#" title="تبلیغات متنی"><li><span>تبلیغات متنی</span></li></a>
+</ul>
+</div>
+
+<div class="footer-box">
+<div class="sub-title-s"><i class="ion-archive"></i><span>آرشیو سایت</span></div>
+<div class="clear"></div>
+<ul class="links">
+<BlogArchive maxitems="7" archivetitle="آرشیو"><a rel="archives" href="<-ArchiveLink->"><li><span> <-ArchiveTitle-> </span></li></a></BlogArchive>
+</ul>
+</div>
+
+<BlogPreviousItemsBlock>
+<div class="footer-box">
+<div class="sub-title-s"><i class="ion-document-text"></i><span>آخرین نوشته ها</span></div>
+<div class="clear"></div>
+<ul class="links">
+<BlogPreviousItems items="7"><a title="ارسال شده در تاریخ <-PostDate-> ساعت <-PostTime->" href="<-PostLink->"><li><span><-PostTitle-></span></li></a></BlogPreviousItems>
+</ul>
+</div></BlogPreviousItemsBlock>
+
+
+</div>
+<div class="clear"></div>
+<div class="footer"><div class="container"><span>© تمامی حقوق مطالب ، تصاویر ، کلیپ ها و فایل  های سایت برای این سایت محوفظ می باشد.</span><a rel="nofollow" target="_blank" href="http://ideapen.ir/" title="قالب گراف" class="copyright">قالب رزبلاگ</a></div></div>
+<! استفاده از قالب در صورت حذف لینک طراح قالب یعنی قالب گراف حرام می باشد و ما رضایتی نداریم ->
+<div class="clear"></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/gh/mohammadsky3/Templates@refs/heads/main/blogfa/theme/Banafsheh/nice-scroll.js"></script>
+</body>
+</html>
