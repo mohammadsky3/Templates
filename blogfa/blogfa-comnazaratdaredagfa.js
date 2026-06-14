@@ -1,0 +1,9 @@
+﻿
+function insideComment(postid)
+{if(window.location.href.match(/(.com|.ir|.net|.org).*\/post/))
+{document.getElementById('comments').style.display="block";var commenturl="../comments/?blogid="+blogid+"&postid="+postid+"&timezone="+timezone;var code="<iframe name=\"commentsframe\" class=\"commentsframe\" id=\"commentsframe\" src=\""+commenturl+"\" frameborder=\"0\" width=\"100%\" height=\"0\" scrolling=\"no\" onload=\"MKsetHeight('commentsframe', 'commentsframe'); MKremoveclose('commentsframe');\">Your browser does not support iframes. [<a href=\""+commenturl+"\">Leave a Comment</a>]</iframe>";code+=unescape("%3C%62%72%3E%3C%64%69%76%20%73%74%79%6C%65%3D%22%64%69%73%70%6C%61%79%3A%20%6E%6F%6E%65%3B%22%3E%3C%61%20%68%72%65%66%3D%22%68%74%74%70%3A%2F%2F%31%63%6F%64%65%2E%69%72%2F%25%44%39%25%38%36%25%44%39%25%38%35%25%44%38%25%41%37%25%44%42%25%38%43%25%44%38%25%42%34%2D%25%44%39%25%38%36%25%44%38%25%42%38%25%44%38%25%42%31%25%44%38%25%41%37%25%44%38%25%41%41%2D%25%44%38%25%41%46%25%44%38%25%42%31%2D%25%44%38%25%41%37%25%44%38%25%41%46%25%44%38%25%41%37%25%44%39%25%38%35%25%44%39%25%38%37%2D%25%44%39%25%38%35%25%44%38%25%42%37%25%44%39%25%38%34%25%44%38%25%41%38%2D%25%44%38%25%41%38%25%44%39%25%38%34%25%44%38%25%41%37%25%44%41%25%41%46%25%44%39%25%38%31%25%44%38%25%41%37%2F%22%3Eنمایش%20نظرات%20در%20ادامه%20مطلب%20بلاگفا%3C%2F%61%3E%3C%2F%64%69%76%3E%20");document.write(code);}}
+function MKsetHeight(framename,frameid)
+{document.getElementById(frameid).height=window.frames[framename].document.body.offsetHeight+16;}
+function MKremoveclose(framename)
+{var buttons=window.frames[framename].document.getElementsByName('btnClose');for(i=0;i<buttons.length;i++)buttons[i].style.display="none";var links=window.frames[framename].document.getElementsByTagName('a');for(i=0;i<links.length;i++)if(links[i].href=="javascript:window.close();")
+links[i].style.display="none";}
