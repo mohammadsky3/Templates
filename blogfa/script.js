@@ -1,1 +1,0 @@
-﻿document.write('<iframe name="Music" width="100%" height="500px" border="0" frameborder="0" marginwidth="1" marginheight="0" style="border:0px solid #EEEEEE; position: relative" target="_blank" align="center" src="https://daramet.com/ideapen" scrolling="no"></iframe>')
