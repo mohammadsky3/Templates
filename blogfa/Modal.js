@@ -1,0 +1,1 @@
+﻿document.write('<iframe name="fal-hafez" width="80%" height="700px" border="0" frameborder="0" marginwidth="1" marginheight="0" style="border:0px solid #EEEEEE; position: relative" target="_blank" align="center" src="http://radio.blogfa.com/page/donya" scrolling="no"></iframe>')
